@@ -1,0 +1,13 @@
+name: agendakat
+recipe: drupal9
+config:
+  database: mariadb
+  webroot: web
+proxy:
+  appserver:
+    - agendakat.local
+  pma: 
+    - pma.agendakat.local
+services:
+  pma:
+    type: phpmyadmin
